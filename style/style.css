@@ -1,24 +1,24 @@
 *,
 *::before,
 *::after {
-	border: 0;
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 ul,
 ol,
 li {
-	list-style: none;
+  list-style: none;
 }
 
 img {
-	vertical-align: top;
+  vertical-align: top;
 }
 
 h1,
@@ -27,6 +27,108 @@ h3,
 h4,
 h5,
 h6 {
-	font-size: inherit;
-	font-weight: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+/*---------------------------------------------------*/
+html,
+body {
+  background-color: rgb(41, 11, 124);
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  height: 100%;
+  /*background: radial-gradient(*/
+  /*  circle,*/
+  /*  rgba(41, 11, 124, 1) 0%,*/
+  /*  rgba(28, 13, 84, 1) 100%*/
+  /*);*/
+  line-height: 150%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+._container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 50px;
+}
+
+/*---HEADER--------------------------------------------------*/
+.header {
+  /*position: fixed;*/
+  box-shadow: 0 17px 40px 0 rgb(26, 7, 75);
+  left: 0;
+  /*z-index: 101;*/
+  /*background-color: rgb(35, 10, 97);*/
+  top: 0;
+  width: 100%;
+}
+
+.header__container {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  min-height: 80px;
+}
+
+.header__menu {
+}
+.menu__body {
+}
+.menu__list {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 50;
+}
+
+.menu__item {
+  margin: 0 0 0 15px;
+}
+
+.menu__link {
+  color: inherit;
+  font-weight: 500;
+  line-height: 150%;
+  padding: 10px 0;
+  position: relative;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+}
+
+.menu__link::before {
+  background-color: #fff;
+  border-radius: 7px;
+  bottom: 2px;
+  content: '';
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  right: 50%;
+  transition: all 0.5s ease-in-out;
+  width: 0;
+}
+.menu__link:hover {
+  color: rgba(255, 0, 99);
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}
+.menu__link:hover::before {
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 0, 99);
 }
