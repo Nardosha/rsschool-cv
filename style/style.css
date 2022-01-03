@@ -686,3 +686,51 @@ ul.education__sublist {
 	top: 4px;
 	width: 13px;
 }
+.footer {
+	background-color: rgb(41, 11, 124);
+	box-shadow: 0 -17px 40px 0 rgb(26, 7, 75);
+}
+
+.footer__container {
+	padding: 20px 0;
+}
+
+.footer__contacts {
+	display: flex;
+	align-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: center;
+	position: relative;
+	z-index: 50;
+}
+
+.contacts-footer {
+}
+
+.contacts-footer__item {
+	font-weight: 500;
+	line-height: 170%;
+}
+
+.contacts-footer__item:not(:last-child) {
+	margin: 0 40px 0 0;
+}
+
+.contacts-footer__item_date {
+}
+
+.contacts-footer__item_github {
+	background: url('../assets/img/footer/git_black.svg') 0 0/27px 27px no-repeat;
+	color: inherit;
+	padding: 0 0 0 45px;
+}
+
+.contacts-footer__item_rsschool {
+	width: 90px;
+}
+
+.contacts-footer__item_rsschool img {
+	height: 100%;
+	width: 100%;
+}
