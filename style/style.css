@@ -760,3 +760,176 @@ ul.education__sublist {
 	height: 100%;
 	width: 100%;
 }
+/*--------АДАПТИВ--------*/
+@media (max-width: 1200px) {
+	body, html {
+		font-size: 14px;
+		
+	}
+	
+	.wrapper::before {
+		background: url(../assets/img/bg/01.svg) -15% -5% no-repeat,
+		url(../assets/img/bg/02.svg) 105% -32% no-repeat,
+		url(../assets/img/bg/03.svg) -17% 105% no-repeat,
+		url(../assets/img/bg/04.svg) 108% 107% no-repeat;
+		background-size: 300px;
+	}
+	
+	.wrapper::after {
+		background: url(../assets/img/bg/5.svg) -17% -10% no-repeat,
+		url(../assets/img/bg/6.svg) 118% -10% no-repeat,
+		url(../assets/img/bg/7.svg) -11% 107% no-repeat,
+		url(../assets/img/bg/8.svg) 114% 110% no-repeat;
+		background-size: 300px;
+	}
+	
+	.menu__link {
+	}
+	.page {
+		padding: 40px 0 100px 0;
+	}
+	.main-block__title {
+		font-size: 26px;
+	}
+	
+	.page__cv-content .title {
+		font-size: 20px;
+	}
+}
+@media (max-width: 980px) {
+	body, html {
+		font-size: 16px;
+	}
+	.wrapper::before {
+		background: url(../assets/img/bg/01.svg) -15% -5% no-repeat,
+		url(../assets/img/bg/02.svg) 105% -32% no-repeat,
+		url(../assets/img/bg/03.svg) -17% 105% no-repeat,
+		url(../assets/img/bg/04.svg) 108% 107% no-repeat;
+		background-size: 300px;
+	}
+	.wrapper::after {
+		background: url(../assets/img/bg/5.svg) -17% -10% no-repeat,
+		url(../assets/img/bg/6.svg) 118% -10% no-repeat,
+		url(../assets/img/bg/7.svg) -11% 107% no-repeat,
+		url(../assets/img/bg/8.svg) 114% 110% no-repeat;
+		background-size: 300px;
+	}
+	.menu__link {
+		font-size: 14px;
+	}
+	.page {
+		padding: 40px 0 100px 0;
+	}
+	.main-block__title {
+		font-size: 26px;
+	}
+	.cv-content__container {
+		justify-content: center;
+		align-content: center;
+		align-items: center;
+	}
+	.cv-content__container section:not(:last-child) {
+		margin: 0 0 20px 0;
+	}
+	.cv-content__contact,
+	.cv-content__about,
+	.cv-content__skills,
+	.cv-content__code-example,
+	.cv-content__experience,
+	.cv-content__education,
+	.cv-content__languages,
+	.cv-content__hobbies {
+		flex: 0 1 100%;
+	}
+	.page__cv-content .title {
+		font-size: 20px;
+		text-align: center;
+	}
+	.skills__list {
+		width: 100%;
+	}
+	/*.code-example__text {*/
+	/*	background-color: rgb(26, 7, 75);*/
+	/*	border-radius: 10px;*/
+	/*	padding: 10px;*/
+	/*}*/
+	.experience__projects {
+		justify-content: center;
+	}
+	.education__item::after {
+		height: 7px;
+		left: 6px;
+		top: 8px;
+		width: 14px;
+	}
+	
+	.education__item::before {
+		height: 25px;
+		left: 0;
+		top: 0;
+		width: 25px;
+	}
+	.hobbies__list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-content: center;
+	}
+	.hobbies__item {
+		flex: 0 1 25%;
+	}
+	.contacts-footer__item {
+		font-size: 14px;
+	}
+}
+@media (max-width: 767px) {
+	.wrapper::before {
+		background: url(../assets/img/bg/01.svg) -19% -3% no-repeat,
+		url(../assets/img/bg/02.svg) 110% -3% no-repeat,
+		url(../assets/img/bg/03.svg) -19% 104% no-repeat,
+		url(../assets/img/bg/04.svg) 110% 105% no-repeat;
+		background-size: 300px;
+	}
+	
+	.wrapper::after {
+		background: url(../assets/img/bg/5.svg) -30% -7% no-repeat,
+		url(../assets/img/bg/6.svg) 123% -7% no-repeat,
+		url(../assets/img/bg/7.svg) -24% 105% no-repeat,
+		url(../assets/img/bg/8.svg) 122% 106% no-repeat;
+		background-size: 300px;
+		opacity: 0.5;
+	}
+	.header .header__container {
+		max-width: 600px;
+	}
+	.menu__list {
+		justify-content: center;
+	}
+	.menu__item {
+	margin: 0 0 0 10px;
+	}
+	.menu__link {
+		font-size: 14px;
+		font-weight: 600;
+	}
+	
+	.page {
+		padding: 25px 0 70px 0;
+	}
+	.page__main-block {
+		margin: 0 0 40px 0;
+	}
+	.main-block__title {
+		font-size: 24px;
+	}
+	.contacts-footer__item:not(:last-child) {
+		margin: 0 20px 0 0;
+	}
+	.contacts-footer__item_github {
+		background: url('../assets/img/footer/git_black.svg') 0 0/23px 23px no-repeat;
+		padding: 0 0 0 30px;
+	}
+	.contacts-footer__item_rsschool {
+		width: 60px;
+	}
+}
