@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -71,11 +71,11 @@
 							<li class="contact__item">
 								<a class="contact__link contact__link_email"
 									href="mailto:NataliDegtyareva70@gmail.com">
-									Email: NataliDegtyareva70@gmail.com</a>
+									Email: NataliDegtyreva@yandex.ru</a>
 							</li>
 							<li class="contact__item">
 								<a class="contact__link contact__link_tg" href="https://telegram.im/@Nardosha"
-									target="_blank">Telegram: https://t.me/Nardosha</a>
+									target="_blank">Telegram: https://t.me/Natalia_Degtyareva</a>
 							</li>
 							<li class="contact__item">
 								<a class="contact__link contact__link_gh" href="https://github.com/Nardosha"
@@ -93,23 +93,26 @@
 							I aspire to create stylish and user-friendly web applications of any complexity.
 						</p>
 						<p class="about__text">
-							I have no work experience, but I have experience of self-study. In three months, I learned how to
-							create simple websites in HTML and CSS and learned the basics of JavaScript.</p>
+							I became a junior frontend developer in three months. And so I've been
+							developing a service written on the Vue/TypeScript stack for the sixth month.
+							At the same time, I am studying React and various compilers.
+							I am also interested in computer science.
+						</p>
 						<p class="about__text">
-							I'm sure that my diligence and fast learning will help me succeed in Frontend Development.
+							In addition, I improve my English and attend some speaking clubs.
 						</p>
 					</section>
 					<section id="skills" class="cv-content__skills skills">
 						<h2 class="skills__title title">skills</h2>
 						<ul class="skills__list">
 							<li class="skills__item skills__item_html">
-								HTMl
+								HTML
 							</li>
 							<li class="skills__item skills__item_css">
-								CSS (Bootstrap, SASS/SCSS, BEM)
+								CSS (SASS/SCSS, BEM)
 							</li>
 							<li class="skills__item skills__item_js">
-								JavaScript
+								JavaScript, TypeScript
 							</li>
 							<li class="skills__item skills__item_git">
 								Git, GitHub
@@ -122,13 +125,21 @@
 					<section id="code-example" class="cv-content__code-example code-example">
 						<h2 class="code-example__title title">code-example</h2>
 						<div class="code-example__text">
-<pre class="code-example__code"><code><span>function</span> <span class="violet">isDivideBy</span>(number, a, b) {
-<span>if</span> (number % a === <span class="orange">0</span> & number % b === <span class="orange">0</span>) {
-	<span>return true</span>
-   } <span>else</span> {
-	<span>return false</span>
-   }
-}</code></pre>
+
+							<pre class="code-example__code"><code><span>function</span> <span class="orange">deepCount</span><span class="green">(</span>a<span class="green">)</span> <span class="blue">{</span>
+  <span class="hljs-keyword">let</span> <span class="hljs-built_in">count</span> = <span class="blue">0</span>
+
+  <span class="hljs-keyword">if</span> (typeof <span class="blue">a</span> !== <span class="yellow">'object'</span> || a.<span class="lightseagreen">length</span> === <span class="blue">0</span>) <span class="lightseagreen">{</span>
+      <span>return</span> 0
+  <span class="lightseagreen">}</span> <span>else</span> <span class="lightseagreen">{</span>
+      a.<span class="lightseagreen">map</span><span class="violet">(</span>item =&gt; <span class="orange">{</span>
+        <span class="hljs-built_in">count</span>++
+	<span>return</span> count += <span class="orange"> deepCount</span><span class="green">(</span>item<span class="green">)</span>
+    <span class="orange">}</span><span class="violet">)</span>
+  <span class="lightseagreen">}</span>
+  <span class="hljs-keyword">return</span> <span class="hljs-built_in">count</span>
+<span class="blue">}</span></code></pre>
+
 						</div>
 					</section>
 					<section id="experience" class="cv-content__experience experience">
@@ -183,7 +194,7 @@
 									</li>
 									<li class="education__subitem">
 										<a class="education__link" href="https://rs.school/js/"
-											target="_blank">JavaScript/Front-end. Stage 0 (in progress)
+											target="_blank">RS School. JavaScript/Front-end. Stage 0, 1.
 										</a>
 									</li>
 								</ul>
@@ -197,7 +208,7 @@
 								Russian - Native
 							</li>
 							<li class="languages__item">
-								English - Elementary (A2)
+								English - Pre-Intermediate (B2)
 							</li>
 						</ul>
 					</section>

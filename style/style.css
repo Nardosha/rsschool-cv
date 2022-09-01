@@ -428,27 +428,27 @@ p.about__text:not(:last-child) {
 }
 
 .skills__item_html::after {
-  width: 90%;
+  width: 95%;
 }
 
 .skills__item_css::after {
-  width: 75%;
+  width: 85%;
 }
 
 .skills__item_js::after {
-  width: 15%;
+  width: 60%;
 }
 
 .skills__item_git::after {
-  width: 40%;
-}
-
-.skills__item_graphic::after {
   width: 80%;
 }
 
+.skills__item_graphic::after {
+  width: 90%;
+}
+
 .skills__item_ide::after {
-  width: 70%;
+  width: 80%;
 }
 
 /*---code-example---*/
@@ -470,11 +470,27 @@ p.about__text:not(:last-child) {
 }
 
 .code-example__text pre code span {
-  color: rgba(255, 0, 99);
+  color: violet;
 }
 
 .code-example__text pre code span.violet {
-  color: violet;
+  color: #a45473;
+}
+
+.code-example__text pre code span.lightseagreen {
+  color: lightseagreen;
+}
+
+.code-example__text pre code span.green {
+  color: green;
+}
+
+.code-example__text pre code span.blue {
+  color: cornflowerblue;
+}
+
+.code-example__text pre code span.yellow {
+  color: yellow;
 }
 
 .code-example__text pre code span.orange {
