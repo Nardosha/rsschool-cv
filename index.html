@@ -43,7 +43,6 @@
 								</li>
 							</ul>
 						</div>
-					
 					</nav>
 				</div>
 			</header>
@@ -125,35 +124,28 @@
 						<section class="cv-content__code-example code-example" id="code-example">
 							<h2 class="code-example__title title">code-example</h2>
 							<div class="code-example__text">
-
-							<pre class="code-example__code"><code><span>function</span><span class="orange">deepCount</span><span class="green">(</span>a<span class="green">)</span> <span class="blue">{</span>
+							<pre class="code-example__code"><code><span>function</span> <span class="orange">deepCount</span><span class="green">(</span>a<span class="green">)</span> <span class="blue">{</span>
   <span class="hljs-keyword">let</span> <span class="hljs-built_in">count</span> = <span class="blue">0</span>
-
   <span class="hljs-keyword">if</span> (typeof <span class="blue">a</span> !== <span class="yellow">'object'</span> || a.<span class="lightseagreen">length</span> === <span class="blue">0</span>) <span class="lightseagreen">{</span>
       <span>return</span> 0
   <span class="lightseagreen">}</span> <span>else</span> <span class="lightseagreen">{</span>
       a.<span class="lightseagreen">map</span><span class="violet">(</span>item =&gt; <span class="orange">{</span>
         <span class="hljs-built_in">count</span>++
-	<span>return</span> count += <span class="orange"> deepCount</span><span class="green">(</span>item<span
-										class="green">)</span>
-    <span class="orange">}</span><span class="violet">)</span>
-  <span class="lightseagreen">}</span>
-  <span class="hljs-keyword">return</span> <span class="hljs-built_in">count</span>
+	<span>return</span> count += <span class="orange"> deepCount</span><span class="green">(</span>item<span class="green">)</span>
+  <span class="orange">}</span><span class="violet">)</span>
+	<span class="lightseagreen">}</span>
+	<span class="hljs-keyword">return</span> <span class="hljs-built_in">count</span>
 <span class="blue">}</span></code></pre>
-							
 							</div>
 						</section>
 						<section class="cv-content__experience experience" id="experience">
 							<h2 class="experience__title title">experience</h2>
 							<div class="experience__projects">
-								
 								<a class="experience__project" href="https://nardosha.github.io/Relvise/index.html"
 								   target="_blank">
-									
 									<figure class="experience__project_preview">
 										<img alt="preview_relvise"
 										     src="assets/img/cv-content/experience/preview_relvise.png">
-										
 										<figcaption class="experience__project_description">
 											<div class="experience__project_title">Relvise</div>
 											<div class="experience__project_subtitle">
@@ -239,12 +231,10 @@
 						<div class="contacts-footer__item contacts-footer__item_date">
 							© 2022 by Nataliya
 						</div>
-						
 						<a class="contacts-footer__item contacts-footer__item_github"
 						   href="https://github.com/Nardosha">
 							Me on GitHub
 						</a>
-						
 						<a class="contacts-footer__item contacts-footer__item_rsschool" href="https://rs.school/js/">
 							<img alt="rs_school_logo" src="assets/img/footer/rs_school_js.svg">
 						</a>
